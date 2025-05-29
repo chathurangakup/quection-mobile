@@ -1,50 +1,45 @@
-# Welcome to your Expo app 👋
+1. Calculator App
+🧮 This is a simple calculator app built with React Native and Expo.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+You can enter two numbers into the input fields.
 
-## Get started
+Tap the "Add Two Numbers" button.
 
-1. Install dependencies
+The app will calculate and display the total.
 
-   ```bash
-   npm install
-   ```
+<img width="381" alt="Calculator Screenshot" src="https://github.com/user-attachments/assets/e1fb9ab4-79ab-4bb6-9ac3-8b315ba536d9" />
 
-2. Start the app
 
-   ```bash
-   npx expo start
-   ```
+2. Navbar (navbar.tsx)
+🔧 Key Features:
 
-In the output, you'll find options to open the app in a
+✅ Responsive Design
+On mobile screens (width < 768): Displays a search icon and a hamburger menu.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+On larger screens: Shows a full navigation menu with items like AEON, Docs, Blog, etc., along with a search input.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+📱 Drawer Menu for Mobile
+Tapping the hamburger icon opens a slide-out drawer (modal) showing all navigation items.
 
-## Get a fresh project
+🧠 Dynamic Layout Detection
+Uses Dimensions and useEffect to listen for screen width changes and update the layout in real time.
 
-When you're ready, run:
+🎨 Clean Styling
+Uses StyleSheet.create to keep the UI clean, consistent, and easy to maintain.
 
-```bash
-npm run reset-project
-```
+<img width="1503" alt="Navbar Desktop Screenshot" src="https://github.com/user-attachments/assets/d60d3be3-62d6-4779-84f6-28be0123c52b" /> <img width="419" alt="Navbar Mobile Screenshot" src="https://github.com/user-attachments/assets/1717ee99-3765-4838-b1e0-9cc0fd030fad" />
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+3. Question 3 (quection3.tsx)
+This function solves the classic "Two Sum" problem from LeetCode.
 
-To learn more about developing your project with Expo, look at the following resources:
+💡 How it works:
+It loops through every pair of numbers in the array using two for loops.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+For each pair, it checks:
 
-## Join the community
+“Do these two numbers add up to the target?”
 
-Join our community of developers creating universal apps.
+If they do, it saves their indexes in a result array.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Finally, it returns the indexes of those two numbers.
