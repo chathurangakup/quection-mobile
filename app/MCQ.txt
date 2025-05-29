@@ -1,5 +1,0 @@
-1. Take the first and second numbers the user typed.
-If the user didn’t type anything, treat it as 0.
-Add them together, and show the result on the screen.
-
-2. 
